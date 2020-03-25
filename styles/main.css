@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 60px 40px;
+    font-size: 14px;
+    width: 1440px;
+    height: 1024px;
+}
+
+/* Nav Items */
+
+nav {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    font-size: 20px;
+}
+
+main {
+    display: inline-block;
+    float: left;
+    margin-top: 50px;
+    width: 75%;
+}
+
+.img-container {
+    width: 150px;
+    height: 150px;
+}
+
+.img-container img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav p {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+nav li {
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+nav li:hover {
+    background: rgba(198, 203, 212, 0.25);
+}
+
+nav li:hover span {
+    color: #4B74FF;
+}
+
+nav li:hover i {
+    color: #4B74FF;
+}
+
+.material-icons {
+    opacity: .5;
+    vertical-align: middle;
+}
+
+nav .material-icons {
+    margin-right: 10px;
+}
+
+.sort-invert {
+    -webkit-transform: rotate(180deg) sCaleX(-1);
+    -moz-transform: rotate(180deg) sCaleX(-1);
+    -ms-transform: rotate(180deg) sCaleX(-1);
+    -o-transform: rotate(180deg) sCaleX(-1);
+    transform: rotate(180deg) sCaleX(-1);
+}
+
+/* Table Items*/
+
+.table-clients {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+caption {
+    margin-bottom: 20px;
+}
+
+.table-clients caption .table-description {
+    text-align: left;
+    float: left;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.table-clients .table-btn-options {
+    display: inline-block;
+    float: right;
+}
+
+.filter-btn {
+    background: #FFFF;
+    border: 1px solid #C6CBD4;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.filter-btn span {
+    padding-right: 2px;
+}
+
+.filter-btn i {
+    font-size: small;
+}
+
+.btn-basic {
+    border: none;
+    cursor: pointer;
+    color: #FFFF;
+    background: #4B74FF;
+    border-radius: 2px;
+    padding: 5px 15px;
+}
+
+.table-clients thead th {
+    text-align: left;
+    font-weight: normal;
+    opacity: .5;
+}
+
+.table-clients thead .item-company {
+    opacity: 1;
+}
+
+.table-clients thead .item-company span {
+    color: #4B74FF;
+}
+
+.table-clients thead th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+.table-clients tbody td {
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(198, 203, 212, .5);
+}
+
+.item-radio {
+    width: 70px;
+    text-align: center;
+}
+
+.item-tags button {
+    margin-right: 15px;
+}
+
+.item-options {
+    width: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.item-options span {
+    margin-left: -20px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid transparent;
+    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.item-options span:hover {
+    border: 1px solid slateblue;
+}
+
+.active-dot-span {
+    color: #0EDD4D;
+    font-size: 90px;
+    vertical-align: middle;
+}
+
+/* Radio Button Styling */
+
+.radio-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-top: -5px;
+    border: 2px solid rgba(0, 0, 0, .5);
+
+}
+
+.radio-container:hover input ~ .radio-mark {
+    background-color: #ccc;
+}
+
+.radio-container input:checked ~ .radio-mark {
+    background-color: #FFFF;
+    border: 2px solid rgba(0, 0, 0, .5);
+}
+
+.radio-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .radio-mark:after {
+    display: block;
+}
+
+.radio-container .radio-mark:after {
+    top: 0;
+    left: 0;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4B74FF;
+}
+
+
+
+
